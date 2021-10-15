@@ -1,0 +1,10 @@
+{
+  "name": "com.lukassacher.colorschemes",
+  "version": "1.0.0",
+  "displayName": "Color Schemes",
+  "unity": "2020.3",
+  "author": {
+    "name": "Lukas Sacher"
+  },
+  "description": "A Color Scheme Package allowing to set a color scheme for UI elements."
+}
