@@ -45,8 +45,10 @@ namespace lukassacher.ColorSchemes
 
             var prev = GUI.contentColor;
             GUI.contentColor = scheme.colors[oldSelected].color;
+            GUI.changed = false;
             var selected = EditorGUI.Popup(position, oldSelected, colorNames);
-            colorIndexProp.intValue = selected;
+            if(GUI.changed)
+                colorIndexProp.intValue = selected;
             GUI.contentColor = prev;
 
             #endregion
